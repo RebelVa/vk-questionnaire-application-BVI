@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f4f6f9;
+    background: rgb(58, 170, 53);
     display: flex;
     justify-content: center;
     margin-top: 80px;
@@ -37,7 +37,7 @@ button {
     margin: 8px;
     padding: 12px 24px;
     border: none;
-    border-radius: 10px;
+    border-radius: 50px;
     cursor: pointer;
     font-size: 16px;
 }
