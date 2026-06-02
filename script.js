@@ -4,11 +4,11 @@ const tree = {
         text: "Ваша олимпиада уровня РСОШ или ВСОШ?",
         links: [
             {
-                text: "Узнать что такое РСОШ",
+                text: "Олимпиады перечня РСОШ",
                 url: "https://rsr-olymp.ru"
             },
             {
-                text: "Узнать что такое ВСОШ",
+                text: "Об олимпиадах ВСОШ",
                 url: "https://olymp.academtalant.ru/vseros"
             }
         ],
