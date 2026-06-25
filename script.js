@@ -143,4 +143,31 @@ function restart() {
     render("start");
 }
 
+function copyEmail() {
+    const email = "olymp@spbstu.ru";
+    navigator.clipboard.writeText(email).then(() => {
+        const msg = document.getElementById('copyMessage');
+        if (msg) {
+            msg.style.display = 'inline';
+            setTimeout(() => {
+                msg.style.display = 'none';
+            }, 2000);
+        }
+    }).catch(() => {
+        const input = document.createElement('input');
+        input.value = email;
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand('copy');
+        document.body.removeChild(input);
+        const msg = document.getElementById('copyMessage');
+        if (msg) {
+            msg.style.display = 'inline';
+            setTimeout(() => {
+                msg.style.display = 'none';
+            }, 2000);
+        }
+    });
+}
+
 render("start");
